@@ -1,0 +1,28 @@
+name: gestion_clientes
+description: "Aplicación para gestión de clientes y registros"
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.0.5          # Para gestión de estado
+  image_picker: ^1.0.4      # Para seleccionar imágenes
+  intl: ^0.18.1             # Para manejo de fechas
+  uuid: ^3.0.7              # Para generar IDs únicos
+  path_provider: ^2.1.1     # Para manejo de archivos
+  path: ^1.8.3              # Para manejo de rutas de archivos
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/       # Carpeta para imágenes (crearla)
