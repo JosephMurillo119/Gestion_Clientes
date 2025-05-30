@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gestion_clientes/models/registro.dart';
 
 /// Servicio que gestiona la lista de registros de clientes.
-///
+
 /// Utiliza `ChangeNotifier` para notificar a los widgets que escuchan
 /// cuando hay cambios en la lista de registros.
 class RegistroService with ChangeNotifier {
@@ -19,7 +19,7 @@ class RegistroService with ChangeNotifier {
   }
 
   /// Actualiza un registro existente identificado por su [id].
-  ///
+
   /// Si se encuentra el registro, se reemplaza por [nuevoRegistro]
   /// y se notifica a los oyentes.
   void actualizarRegistro(String id, Registro nuevoRegistro) {
@@ -31,7 +31,7 @@ class RegistroService with ChangeNotifier {
   }
 
   /// Elimina un registro de la lista según su [id].
-  ///
+
   /// Después de eliminar, notifica a los oyentes.
   void eliminarRegistro(String id) {
     _registros.removeWhere((r) => r.id == id);

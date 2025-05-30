@@ -5,7 +5,6 @@ import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart' as path;
 
 /// Servicio para seleccionar y guardar imágenes localmente desde la galería.
-///
 /// Utiliza `image_picker` para obtener la imagen y `path_provider` para
 /// guardar el archivo en el directorio de documentos de la aplicación.
 class ImageService {
@@ -13,7 +12,7 @@ class ImageService {
   final ImagePicker _picker = ImagePicker();
 
   /// Permite al usuario seleccionar una imagen de la galería y guardarla localmente.
-  ///
+
   /// Retorna la ruta del archivo guardado si la imagen fue seleccionada y guardada correctamente.
   /// Si el usuario cancela la selección o ocurre un error, retorna `null`.
   Future<String?> pickAndSaveImage() async {

@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
   }
 
   /// Crea un botón con ícono y texto, que navega a una ruta específica.
-  ///
+
   /// [context] es el contexto de la aplicación.
   /// [text] es el texto del botón.
   /// [icon] es el ícono que acompaña el texto.
